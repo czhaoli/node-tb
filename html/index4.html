@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="UTF-8">
+<title>手机淘宝</title>
+<script type="text/javascript">
+console.log(45);
+window.addEventListener('popstate', () =>{
+console.log(21)
+
+}, false);
+</script>
+<link href="/index.css" rel="stylesheet" type="text/css" />
+<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js" type="text/ecmascript"></script>
+<script type="text/javascript" src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script type="text/javascript">
+window.addEventListener('popstate', function(e){
+  console.log(1);
+}, false);
+</script>
+</head>
+<div id="ip" class="div2" ></div>
+<div id="time" class="rq"></div>
+<div class="all">
+</div>
+<script>
+    document.getElementById('ip').innerText = remote_ip_info["province"] + "省" + ',' +remote_ip_info["city"] + "市， " + returnCitySN.cip
+    function setTime() {
+        document.getElementById('time').innerText = new Date().toLocaleString();
+    }
+    setTime();
+    setInterval(setTime, 1000);
+    window.addEventListener('popstate', function(e){
+      console.log(1);
+    }, false);
+</script>
+<script type="text/javascript" src="./a4-p1.js"></script>
+<script type="text/javascript" src="./a4-p2.js"></script>
+
+<script type="text/javascript">
+console.log(123);
+window.addEventListener('popstate', () =>{
+console.log(211)
+
+}, false);
+</script>
+</body>
+</html>

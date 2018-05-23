@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>近3个月退货和售后管理</title>
+<link rel="stylesheet" type="text/css" href="./index.css">
+<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js" type="text/ecmascript"></script>
+<script type="text/javascript" src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+</head>
+<body >
+
+<div id="ip" class="div2" ></div>
+<div id="time" class="rq"></div>
+<div class="all" >
+</div>
+
+<div class="Telescopic">
+        <div class="rq"></div>
+        <div class="return_top" style="display:none"></div>
+        <div class="dd"></div>
+</div>
+
+<div class="top"  >
+
+        <div class="rq"  style="float: left;padding: 0 10px 0 0px;"></div>
+</div>
+
+<iframe src="https://refund2.tmall.com/dispute/buyerDisputeList.htm" marginwidth="0" marginheight="0" border="0" scrolling="no" frameborder="0"
+width="1350" height="6270"></iframe>
+<script>
+    document.getElementById('ip').innerText = remote_ip_info["province"] + "省" + ',' +remote_ip_info["city"] + "市， " + returnCitySN.cip
+    function setTime() {
+        document.getElementById('time').innerText = new Date().toLocaleString();
+    }
+    setTime();
+    setInterval(setTime, 1000);
+</script>
+
+</body>
+</html>

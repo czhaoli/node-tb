@@ -1,0 +1,79 @@
+{ "extends": "eslint-config-airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "react/prop-types": 0,
+    "no-use-before-define": 0,
+    "react/prefer-stateless-function": 0,
+    "radix": 0,
+    "no-param-reassign": 0,
+    "react/jsx-filename-extension": 0,
+    "object-property-newline": 0,
+    "no-mixed-operators": 0,
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "no-console": 0, #关闭不允许console.log，上线放开
+    "no-unused-expressions": 0, #关闭item.component && this.props这种提示
+    "no-unused-vars": 0, #关闭没有使用的变量提示，上线放开
+    "no-underscore-dangle": 0, #关闭不允许出现_下划线开头
+    "arrow-body-style": 0, #关闭强制箭头函数体使用大括号
+    "import/imports-first": 0, #关闭import要出现在文件最顶端
+    "global-require": 0, #关闭require要出现在顶层模块作用域中
+    "max-len": [1,120], #一行最多120字符
+    "react/jsx-first-prop-new-line": 0, #关闭jsx属性另起一行
+    "import/no-unresolved": 0, #进入require没法识别的模块
+    "new-cap": 0, #禁用构造函数首字母大写，因为和LoadingToast冲突
+    "react/jsx-no-bind": 0, #关闭属性不允许用bind
+    "no-nested-ternary": 0, #关闭不允许出现三元表达式
+    "eol-last": 0, #关闭文件结尾要有一空行
+    "no-prototype-builtins": 0, #关闭禁止直接使用 Object.prototypes 的内置属性
+    "func-names": 0, #关闭强制使用命名的 function 表达式
+    "no-case-declarations": 0, #关闭不允许在 case 子句中使用词法声明
+    "react/no-string-refs": 1, #警告过期的ref是使用方法
+    "no-useless-constructor": 0, #警告没有用的构造器
+    "react/jsx-boolean-value": 0, #关闭属性为true是自动去掉
+    "react/self-closing-comp": 0, #关闭把<view></view>， 自动合并为<view />
+    "react/sort-comp": 0, #关闭强制组件里面方法的出现顺序
+    "object-shorthand": 0, #关闭强制object不允许key和value一致
+    "prefer-const": 0, #关闭变量没有重新被赋值必须使用const声明
+    "operator-assignment": 0, #关闭x += y代替x = x + y的强制使用
+    "dot-notation": 0, #关闭强制foo[bar];要用foo.bar写
+    "prefer-rest-params": 0, #关闭不然使用arguments
+    "no-unneeded-ternary": 0, #关闭 a = b === false ? false : true;强制使用 a = b || true会导致bug
+    "semi": 1, #关闭强制结尾；分号，上线放开
+    "quotes": 0, #允许单引号和反勾号
+    "import/no-named-default": 0, #关闭强制引用默认的输出
+    "no-plusplus": 0, #关闭强制不能使用++ --
+    "class-methods-use-this": 0, #关闭强制使用static方法
+    "arrow-parens": 0, #关闭强制箭头函数参数要括号
+    "indent": [1,2, {"SwitchCase":1}], #缩紧警告提示
+    "import/first": 0, #import需要在文档开头引用警告提示
+    "import/default": 0, #import进来的文件要输出一个default
+    "import/named": 0, #import进来的文件要输出确切模块命
+    "jsx-quotes": 0, #jsx用双括号
+    "brace-style": 0, #不允许使用～
+    "no-trailing-spaces": 0, #允许空行里面有空格（自动缩进）
+    "vars-on-top": 0, #var要再文档最顶声明
+    "no-else-return": 0, #else里面不能用return
+    "no-alert": 0, #不允许使用alert
+    "no-sparse-arrays": 0, #禁用稀疏数组
+  },
+  "plugins": [
+    "react", "import"
+  ],
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": ["node_modules", "src"]
+    }
+  },
+  "globals": {
+    "__DEVELOPMENT__": true,
+    "socket": true,
+    "webpackIsomorphicTools": true
+  }
+}

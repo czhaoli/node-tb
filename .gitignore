@@ -1,0 +1,12 @@
+.idea/
+node_modules/
+*.iml
+webpack-stats.json
+npm-debug.log
+*.swp
+.DS_Store
+/.project
+package-lock.json
+
+#dist/
+#webpack-assets.json

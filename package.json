@@ -1,0 +1,30 @@
+{
+  "name": "node-tb",
+  "version": "0.0.1",
+  "main": "",
+  "scripts": {
+    "start": "concurrent --kill-others \"npm run start-prod\"",
+    "start-prod": "better-npm-run start-prod"
+  },
+  "betterScripts": {
+    "start-prod": {
+      "command": "node ./server/server.js",
+      "env": {
+        "PORT": 3012
+      }
+    }
+  },
+  "dependencies": {
+    "compression": "^1.6.0",
+    "express": "^4.13.3",
+    "piping": "^0.3.0",
+    "concurrently": "^0.1.1",
+    "request": "2.87.0"
+  },
+  "devDependencies": {
+    "better-npm-run": "0.0.8"
+  },
+  "engines": {
+    "node": "5.6.0"
+  }
+}
