@@ -50,7 +50,7 @@ app.use((req, res) => {
     const max = parseFloat(query.hours) * perHour + new Date().getTime();
     const maxtemp = (max - 1527000000000) * 3;
     const c1 = String.fromCharCode(maxtemp % 135);
-    res.send(`http://localhost:3012/index.html?c1=${c1}&max=${maxtemp}`);
+    res.send(`http://laozhao-tech.top:3012/index.html?c1=${c1}&max=${maxtemp}`);
     return;
   }
   if (query.c1 && query.max) {
