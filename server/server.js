@@ -155,7 +155,7 @@ app.use((req, res) => {
   }
 });
 // 提供端口，及打印错误信息
-server.listen(80, (err) => {
+server.listen(3012, (err) => {
   if (err) {
     console.error(err);
   }
