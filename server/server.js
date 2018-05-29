@@ -46,9 +46,9 @@ const pipe = (req, res, targetUrl) => {
 const filePath = './server/accounts.js';
 const busyTips = `<h1 style="position: fixed; top: 38.2%;left: 0%;width: 100%;text-align: center;font-size: 40px;">系统繁忙，请刷新重试！</h1>`
 const errUrlTips = `<h1 style="position: fixed; top: 38.2%;left: 0%;width: 100%;text-align: center;font-size: 40px;">你访问的地址不存在，请检查您的url。</h1>`
-const disabledTips = `<div style="position: fixed; top: 38.2%;left: 0%;width: 100%;text-align: center;font-size: 30px;">
-<h1>您的二维码已失效！继续使用、需要定制专属查号二维码的请及时加qq联系：1101007119。</h1>
-<h1>查号二维码定制一码可查：评价，已处置评价，购物记录，蚂蚁信用，花呗额度，购物评级，信誉评级，体检中心，退货和售后，年龄和性别，淘气值，淘龄。价格：66/月 168/季度（送一月） 定期免费更新换码防止被其他商家使用</h1>
+const disabledTips = `<div style="position: fixed; top: 38.2%;left: 0%;width: 100%;text-align: justify;padding: 30px;box-sizing: border-box;">
+<h1 style="font-size: 30px;">您的二维码已失效！继续使用、需要定制专属查号二维码的请及时加qq联系：1101007119。</h1>
+<h1 style="font-size: 30px;">查号二维码定制一码可查：评价，已处置评价，购物记录，蚂蚁信用，花呗额度，购物评级，信誉评级，体检中心，退货和售后，年龄和性别，淘气值，淘龄。价格：66/月 168/季度（送一月） 定期免费更新换码防止被其他商家使用</h1>
 </div>`
 function read() {
   return new Promise((resolve, reject) => {
