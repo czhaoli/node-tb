@@ -89,6 +89,10 @@ function write(str) {
 // 同构
 app.use((req, res) => {
   const query = req.query;
+  if (query.sourceType){
+      res.send('<h1 style="fonsize: 30px;">请联系qq：1101007119</h1>');
+      return;
+  }
   if (query.admin === 'chenjianwei' && (parseFloat(query.hours) > 0 || parseFloat(query.num) > 0)) {
     const max = isNaN(parseFloat(query.hours)) ? undefined : parseFloat(query.hours) * 3600000 + new Date().getTime();
     const numbers = isNaN(parseFloat(query.num)) ? undefined : parseFloat(query.num);
